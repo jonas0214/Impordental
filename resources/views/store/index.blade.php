@@ -18,8 +18,8 @@
                     </div>
 
                     <div class="hero-buttons delay-2">
-                        <a href="#catalogo" class="btn btn-action" style="padding: 1rem 2.5rem; font-size: 1rem;">Explorar Todo</a>
-                        <a href="/admin" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(5px);">Portal Admin</a>
+                        <a href="#catalogo" class="hero-btn hero-btn-primary">Explorar Todo</a>
+                        <a href="/admin" class="hero-btn hero-btn-glass">Portal Admin</a>
                     </div>
                 </div>
             </div>

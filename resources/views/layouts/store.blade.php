@@ -28,7 +28,7 @@
             </form>
 
             <div class="header-actions">
-                <a href="/admin" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.4rem 0.8rem; border-color: #cbd5e1; color: var(--color-text-secondary);">Portal Profesional</a>
+                <a href="/admin" class="portal-link">Portal Profesional</a>
                 <a href="#" class="action-icon" title="Mi Cuenta">👤</a>
                 <a href="#" class="action-icon" title="Carrito" style="position:relative;">
                     🛒 <span style="position:absolute; top:2px; right:2px; background:var(--color-action); color:white; font-size:0.6rem; min-width:16px; height:16px; display:flex; align-items:center; justify-content:center; border-radius:50%; font-weight:800;">0</span>

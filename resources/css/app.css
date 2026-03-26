@@ -208,23 +208,43 @@ html { scroll-behavior: smooth; }
     transform: translateY(-3px);
 }
 
-.promo-image { 
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
-    opacity: 0.2; /* Watermark effect for centered layout */
-    pointer-events: none;
-    z-index: 1;
-}
-
-.promo-image img { 
-    max-height: 300px; 
-}
-
 .hero-buttons {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     justify-content: center;
+    align-items: center;
+}
+
+.hero-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.hero-btn-primary {
+    background: var(--color-action);
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3);
+}
+
+.hero-btn-primary:hover {
+    background: var(--color-action-hover);
+    transform: translateY(-2px);
+}
+
+.hero-btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.hero-btn-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Trust Badges v2 */
