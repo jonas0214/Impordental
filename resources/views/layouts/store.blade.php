@@ -55,6 +55,15 @@
             <div class="logo">
                 <a href="{{ route('home') }}">Impor<span>dental</span></a>
             </div>
+
+            <nav class="main-nav">
+                <a href="{{ route('home') }}">Inicio</a>
+                <a href="#catalogo">Insumos</a>
+                <a href="#">Equipos</a>
+                <a href="#">Ortodoncia</a>
+                <a href="#">Estética</a>
+                <a href="#">Ofertas</a>
+            </nav>
             
             <form action="#" class="header-search">
                 <span class="search-icon">🔍</span>
@@ -63,22 +72,15 @@
 
             <div class="header-actions">
                 <a href="/admin" class="portal-link">Portal Profesional</a>
-                <a href="#" class="action-icon" title="Mi Cuenta">👤</a>
-                <a href="#" class="action-icon" title="Carrito" style="position:relative;">
-                    🛒 <span style="position:absolute; top:2px; right:2px; background:var(--color-action); color:white; font-size:0.6rem; min-width:16px; height:16px; display:flex; align-items:center; justify-content:center; border-radius:50%; font-weight:800;">0</span>
-                </a>
+                <div class="user-tools">
+                    <a href="#" class="tool-btn"><span class="icon">👤</span></a>
+                    <a href="#" class="tool-btn cart-btn">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <nav class="secondary-nav">
-            <div class="container">
-                <a href="{{ route('home') }}">Inicio</a>
-                <a href="#catalogo">Insumos</a>
-                <a href="#">Equipos</a>
-                <a href="#">Ortodoncia</a>
-                <a href="#">Estética</a>
-                <a href="#">Ofertas</a>
-            </div>
-        </nav>
     </header>
 
     <main id="main-content">

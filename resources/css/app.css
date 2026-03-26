@@ -41,24 +41,31 @@ html { scroll-behavior: smooth; }
     padding: 0 1.5rem; 
 }
 
-/* Header v10 */
-.glass-header { 
-    position: sticky; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
-    background: #ffffff; 
-    border-bottom: 1px solid #f1f5f9; 
-}
-
-/* Header v11 (Symmetrical Grid) */
 .header-container { 
-    display: grid; 
-    grid-template-columns: 180px 1fr 180px; /* Precise symmetry */
+    display: flex; 
     align-items: center; 
-    height: 64px; /* Even more compact */
+    justify-content: space-between;
+    height: 72px; 
     gap: 1.5rem;
 }
+
+.main-nav { 
+    display: flex; 
+    gap: 1.25rem; 
+    align-items: center;
+}
+
+.main-nav a { 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    color: var(--color-text-secondary); 
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: var(--transition-smooth);
+}
+
+.main-nav a:hover { color: var(--color-accent); }
 
 .logo a { font-size: 1.4rem; }
 .header-search { width: 100%; max-width: 500px; margin: 0 auto; }
@@ -68,37 +75,27 @@ html { scroll-behavior: smooth; }
 .logo a { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--color-accent-dark); text-decoration: none; }
 
 .header-search { 
-    width: 100%;
-    max-width: 420px; /* More compact */
-    margin: 0 auto;
+    flex: 1;
+    max-width: 320px; 
     position: relative; 
 }
 
 .header-search input { 
     width: 100%; 
-    padding: 0.55rem 1.25rem 0.55rem 2.8rem; 
-    border-radius: 8px; /* Squared but modern */
+    padding: 0.5rem 1.25rem 0.5rem 2.4rem; 
+    border-radius: 6px; 
     border: 1px solid #e2e8f0; 
     background: #f8fafc; 
-    font-size: 0.85rem; 
+    font-size: 0.8rem; 
     transition: var(--transition-smooth); 
 }
 
-.search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--color-text-light); }
+.search-icon { position: absolute; left: 0.85rem; top: 50%; transform: translateY(-50%); color: var(--color-text-light); font-size: 0.8rem; }
 
-.portal-link {
-    font-size: 0.6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-accent-dark);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1.5px solid var(--color-accent-soft);
-    border-radius: 4px;
-    background: white;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition-smooth);
+.header-actions { 
+    display: flex; 
+    align-items: center; 
+    gap: 1.25rem; 
 }
 
 .portal-link:hover {
