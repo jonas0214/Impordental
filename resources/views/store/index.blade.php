@@ -2,18 +2,14 @@
 
 @section('content')
 <section class="hero-slider">
-    <div class="container">
-        <div class="promo-banner">
-            <div class="promo-grid">
-                <div class="promo-content animate-fade-in">
-                    <span class="promo-badge" style="background: var(--color-accent-soft); color: var(--color-accent-dark); padding: 0.4rem 0.8rem; border-radius: 4px; font-weight: 800; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; display: inline-block;">Certificación ISO 9001</span>
-                    <h1 class="promo-title">Excelencia en Insumos Quirúrgicos</h1>
-                    <p class="promo-description">Distribución especializada de equipamiento odontológico de alta gama con estándares internacionales.</p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#catalogo" class="hero-btn hero-btn-primary" style="background: var(--color-accent-dark); color: white; padding: 0.8rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: 0.3s; box-shadow: 0 4px 12px rgba(7, 89, 133, 0.2);">Ver Portafolio</a>
-                        <a href="/admin" class="hero-btn" style="color: #64748b; text-decoration: none; font-weight: 700; font-size: 0.85rem; padding: 0.8rem 1.5rem; transition: 0.3s;">Portal Med</a>
-                    </div>
+    <div class="container hero-container-v17">
+        <div class="hero-main-banner">
+            <div class="hero-text-block animate-fade-in">
+                <h1 class="hero-title-v17">Excelencia en Insumos Odontológicos</h1>
+                <p class="hero-subtitle-v17">Distribución premier de equipamiento de alta gama para profesionales que exigen precisión absoluta.</p>
+                <div class="hero-actions-v17">
+                    <a href="#catalogo" class="btn-primary-v17">Explorar Portafolio</a>
+                    <a href="/admin" class="btn-link-v17">Portal Especialistas</a>
                 </div>
             </div>
         </div>
