@@ -13,7 +13,7 @@
                     <a href="#" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3);">Más Información</a>
                 </div>
             </div>
-            <div class="promo-image">
+            <div class="promo-image animate-float">
                 <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Equipamiento Dental" style="border-radius: 12px; object-fit: cover;">
             </div>
             <div class="promo-bg-elements">
