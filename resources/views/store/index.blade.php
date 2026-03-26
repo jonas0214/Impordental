@@ -4,13 +4,13 @@
 <section class="hero-slider">
     <div class="container">
         <div class="promo-banner">
-            <div class="promo-content">
-                <span class="promo-badge">Oferta de la Semana</span>
-                <h1 class="promo-title">Equipamiento Dental con <span>Garantía Premium</span></h1>
-                <p class="promo-description">Descubre nuestra nueva línea de unidades odontológicas de alta tecnología. Financiación disponible hasta 12 meses.</p>
-                <div class="hero-buttons" style="justify-content: flex-start;">
+            <div class="promo-content animate-fade-in">
+                <span class="promo-badge delay-1">Oferta de la Semana</span>
+                <h1 class="promo-title delay-1">Equipamiento Dental con <span>Garantía Premium</span></h1>
+                <p class="promo-description delay-2">Descubre nuestra nueva línea de unidades odontológicas de alta tecnología. Financiación disponible hasta 12 meses.</p>
+                <div class="hero-buttons delay-2" style="display: flex; gap: 1rem; margin-top: 2rem;">
                     <a href="#catalogo" class="btn btn-action">Ver Catálogo</a>
-                    <a href="#" class="btn btn-secondary">Más Información</a>
+                    <a href="#" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3);">Más Información</a>
                 </div>
             </div>
             <div class="promo-image">
@@ -74,22 +74,16 @@
                         @else
                             <div class="image-placeholder">🦷</div>
                         @endif
-                        <span class="product-category">{{ $product->category->name ?? 'Insumos' }}</span>
                     </div>
                     <div class="product-info">
                         <span class="product-brand">{{ $product->brand->name ?? 'Premium' }}</span>
-                        <h3 class="product-name" title="{{ $product->name }}">{{ Str::limit($product->name, 45) }}</h3>
+                        <h3 class="product-name" title="{{ $product->name }}">{{ Str::limit($product->name, 50) }}</h3>
                         
-                        <div class="product-price-row">
-                            <span class="product-price">${{ number_format($product->price, 0, ',', '.') }}</span>
-                            @if($product->stock > 0)
-                                <span class="badge in-stock">Disponible</span>
-                            @else
-                                <span class="badge out-of-stock">Agotado</span>
-                            @endif
-                        </div>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="#" class="btn btn-primary" style="width: 100%; border-radius: 6px;">Ver Detalles</a>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price">${{ number_format($product->price, 0, ',', '.') }}</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ver</a>
                         </div>
                     </div>
                 </div>

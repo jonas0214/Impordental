@@ -28,9 +28,9 @@
             </form>
 
             <div class="header-actions">
-                <a href="#" class="btn btn-outline" style="border:none; font-size: 1.2rem;">👤</a>
-                <a href="#" class="btn btn-outline" style="border:none; font-size: 1.2rem; position:relative;">
-                    🛒 <span style="position:absolute; top:5px; right:5px; background:var(--color-action); color:white; font-size:0.6rem; padding: 2px 5px; border-radius:50%;">0</span>
+                <a href="#" class="action-icon" title="Mi Cuenta">👤</a>
+                <a href="#" class="action-icon" title="Carrito" style="position:relative;">
+                    🛒 <span style="position:absolute; top:2px; right:2px; background:var(--color-action); color:white; font-size:0.6rem; min-width:16px; height:16px; display:flex; align-items:center; justify-content:center; border-radius:50%; font-weight:800;">0</span>
                 </a>
             </div>
         </div>
@@ -51,37 +51,41 @@
     </main>
 
     <footer class="footer">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: left; padding: 4rem 0;">
+        <div class="footer-container">
             <div>
                 <div class="logo" style="margin-bottom: 1.5rem;">
-                    <a href="#" style="color: white;">Impor<span style="color: var(--color-accent-light);">dental</span></a>
+                    <a href="#" style="color: white; font-size: 1.5rem;">Impor<span>dental</span></a>
                 </div>
-                <p style="font-size: 0.85rem; line-height: 1.8;">Expertos en suministro de equipos e insumos odontológicos de alta calidad. Tu socio estratégico en salud dental.</p>
+                <p style="font-size: 0.85rem; line-height: 1.8; color: #64748b;">Especialistas en la distribución de insumos y equipamiento dental de alta gama para profesionales exigentes.</p>
             </div>
             <div>
-                <h4 style="color: white; margin-bottom: 1.5rem;">Categorías</h4>
-                <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Equipos Dentales</a></li>
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Insumos Clínicos</a></li>
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Bioseguridad</a></li>
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Instrumental</a></li>
+                <h4 style="color: white; margin-bottom: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Enlaces Rápidos</h4>
+                <ul style="list-style: none; font-size: 0.85rem; line-height: 2.2;">
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Sobre Nosotros</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Catálogo Online</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Preguntas Frecuentes</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Blog Dental</a></li>
                 </ul>
             </div>
             <div>
-                <h4 style="color: white; margin-bottom: 1.5rem;">Ayuda</h4>
-                <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Preguntas Frecuentes</a></li>
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Envíos y Devoluciones</a></li>
-                    <li><a href="#" style="color: inherit; text-decoration: none;">Contacto</a></li>
+                <h4 style="color: white; margin-bottom: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Soporte</h4>
+                <ul style="list-style: none; font-size: 0.85rem; line-height: 2.2;">
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Atención al Cliente</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Envíos y Entregas</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none; transition: 0.2s;">Términos y Condiciones</a></li>
                 </ul>
             </div>
             <div>
-                <h4 style="color: white; margin-bottom: 1.5rem;">Contacto</h4>
-                <p style="font-size: 0.85rem; line-height: 1.8;">📍 Calle Primaria #123, Ciudad<br>📞 +57 300 123 4567<br>✉️ info@impordental.com</p>
+                <h4 style="color: white; margin-bottom: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Póngase en contacto</h4>
+                <p style="font-size: 0.85rem; line-height: 1.8; color: #64748b;">
+                    📍 Calle Comercial #45-67, Bogotá<br>
+                    📞 +57 (601) 123 4567<br>
+                    📧 contacto@impordental.com
+                </p>
             </div>
         </div>
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding: 2rem 0;">
-            <p>&copy; {{ date('Y') }} Impordental. Todos los derechos reservados.</p>
+        <div style="max-width: 1400px; margin: 4rem auto 0; padding: 2rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
+            <p style="font-size: 0.75rem; color: #475569;">&copy; {{ date('Y') }} Impordental Colombia. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
