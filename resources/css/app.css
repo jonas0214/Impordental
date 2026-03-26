@@ -44,11 +44,12 @@ html { scroll-behavior: smooth; }
 /* Elite Top Bar v18 */
 .top-bar-elite {
     background: #0f172a;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    height: 32px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    height: 34px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
