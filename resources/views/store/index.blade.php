@@ -6,27 +6,25 @@
         <div class="promo-banner">
             <div class="promo-grid">
                 <div class="promo-content animate-fade-in">
-                    <span class="promo-badge">Tecnología de Vanguardia</span>
-                    <h1 class="promo-title">Equipamiento Dental <span>Premium</span></h1>
-                    <p class="promo-description">Elevamos el estándar de tu clínica con soluciones integrales de alta precisión y durabilidad garantizada.</p>
+                    <span class="promo-badge">Innovación Odontológica</span>
+                    <h1 class="promo-title">Excelencia en Cada <span>Detalle</span></h1>
+                    <p class="promo-description">Especialistas en suministro de alta precisión para clínicas que buscan resultados de clase mundial.</p>
                     
-                    <div class="hero-features delay-1">
-                        <div class="hero-feature-item"><span>✅</span> Garantía de 2 Años</div>
-                        <div class="hero-feature-item"><span>✅</span> Soporte Técnico</div>
-                        <div class="hero-feature-item"><span>✅</span> Envío Asegurado</div>
+                    <div class="hero-categories delay-1">
+                        <a href="#catalogo" class="hero-cat-pill">Insumos</a>
+                        <a href="#catalogo" class="hero-cat-pill">Equipos</a>
+                        <a href="#catalogo" class="hero-cat-pill">Bioseguridad</a>
+                        <a href="#catalogo" class="hero-cat-pill">Ortodoncia</a>
                     </div>
 
-                    <div class="hero-buttons delay-2" style="display: flex; gap: 1rem;">
-                        <a href="#catalogo" class="btn btn-action">Explorar Catálogo</a>
-                        <a href="/admin" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3);">Área Profesional</a>
+                    <div class="hero-buttons delay-2">
+                        <a href="#catalogo" class="btn btn-action" style="padding: 1rem 2.5rem; font-size: 1rem;">Explorar Todo</a>
+                        <a href="/admin" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(5px);">Portal Admin</a>
                     </div>
                 </div>
-                <div class="promo-image animate-float">
-                    <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Equipamiento Dental Professional">
-                </div>
             </div>
-            <div class="promo-bg-elements">
-                <div class="bg-circle" style="width: 300px; height: 300px; top: -50px; right: -50px; opacity: 0.4;"></div>
+            <div class="promo-image animate-float">
+                <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Watermark Background">
             </div>
         </div>
     </div>

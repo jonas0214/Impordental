@@ -113,90 +113,118 @@ html { scroll-behavior: smooth; }
 
 .secondary-nav a:hover { color: var(--color-accent); }
 
-/* Hero Section v5 (Ultra-Compact) */
+/* Hero Section v7 (Centered & Glassmorphism) */
 .hero-slider { 
-    padding: 1.5rem 0; 
+    padding: 2rem 0; 
     background: #ffffff; 
 }
 
 .promo-banner { 
-    background: linear-gradient(135deg, #0284c7 0%, #075985 100%); 
-    border-radius: 16px; 
+    background: linear-gradient(135deg, #075985 0%, #0284c7 100%); 
+    border-radius: 24px; 
     overflow: hidden; 
-    display: flex; 
-    align-items: center; 
-    min-height: 340px; /* Reduced from 440px */
+    min-height: 400px; 
     position: relative; 
-    box-shadow: 0 15px 30px -10px rgba(2, 132, 199, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0, 50, 100, 0.1);
 }
 
 .promo-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    width: 100%;
+    display: flex;
+    flex-direction: column; /* Centered Layout */
     align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    z-index: 5;
 }
 
 .promo-content { 
-    padding: 2.5rem 4rem; /* Reduced from 4rem 5rem */
-    color: white; 
-    z-index: 2; 
+    max-width: 800px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 .promo-badge { 
-    font-size: 0.65rem; 
+    font-size: 0.7rem; 
     font-weight: 800; 
     text-transform: uppercase; 
     letter-spacing: 0.15em; 
-    background: rgba(255, 255, 255, 0.15);
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
+    color: var(--color-accent-light);
     margin-bottom: 1rem; 
     display: inline-block; 
 }
 
 .promo-title { 
     font-family: var(--font-heading); 
-    font-size: 2.25rem; /* Reduced from 2.75rem */
+    font-size: 3rem; 
     font-weight: 800; 
     line-height: 1.1; 
-    margin-bottom: 1rem; 
+    margin-bottom: 1.25rem; 
+    color: white;
 }
 
 .promo-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
-    max-width: 95%;
-}
-
-.hero-features {
-    display: flex;
-    gap: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hero-feature-item {
+.hero-categories {
     display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.8rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-cat-pill {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    color: white;
+    font-size: 0.75rem;
     font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.hero-cat-pill:hover {
+    background: white;
+    color: var(--color-accent);
+    transform: translateY(-3px);
 }
 
 .promo-image { 
-    display: flex; 
-    justify-content: center; 
-    z-index: 2; 
-    padding-right: 3rem;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    opacity: 0.2; /* Watermark effect for centered layout */
+    pointer-events: none;
+    z-index: 1;
 }
 
 .promo-image img { 
-    max-width: 100%; 
-    max-height: 260px; /* Reduced from 320px */
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.2)); 
-    border-radius: 12px;
+    max-height: 300px; 
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 /* Trust Badges v2 */
