@@ -53,12 +53,18 @@ html { scroll-behavior: smooth; }
     border-bottom: 1px solid #f1f5f9; 
 }
 
+/* Header v11 (Symmetrical Grid) */
 .header-container { 
     display: grid; 
-    grid-template-columns: 200px 1fr 200px; 
+    grid-template-columns: 180px 1fr 180px; /* Precise symmetry */
     align-items: center; 
-    height: 70px; /* Reduced height */
+    height: 64px; /* Even more compact */
+    gap: 1.5rem;
 }
+
+.logo a { font-size: 1.4rem; }
+.header-search { width: 100%; max-width: 500px; margin: 0 auto; }
+.header-actions { gap: 1rem; }
 
 .logo { display: flex; align-items: center; }
 .logo a { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--color-accent-dark); text-decoration: none; }
@@ -143,30 +149,32 @@ html { scroll-behavior: smooth; }
 
 .secondary-nav a:hover { color: var(--color-accent); }
 
-/* Hero Section v10 (Ultra-Compress) */
+/* Hero Section v11 (The "Medical Edge" Layout) */
 .hero-slider { 
-    padding: 1rem 0; 
+    padding: 0.75rem 0; 
 }
 
 .promo-banner { 
-    background: linear-gradient(135deg, #075985 0%, #0284c7 100%); 
+    background: linear-gradient(rgba(7, 89, 133, 0.85), rgba(2, 132, 199, 0.9)), 
+                url('/images/hero-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     border-radius: 12px; 
     overflow: hidden; 
-    min-height: 240px; /* Highly compressed */
+    min-height: 180px; /* Definitive height reduction */
     position: relative; 
     display: flex;
     align-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-premium);
 }
 
 .promo-grid {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 2.5rem 5rem;
+    padding: 1.5rem 3.5rem; /* Compressed padding */
     z-index: 5;
-    text-align: left; /* Back to left for better horizontal alignment */
-    justify-content: space-between;
 }
 
 .promo-content { 
@@ -185,21 +193,19 @@ html { scroll-behavior: smooth; }
 
 .promo-title { 
     font-family: var(--font-heading); 
-    font-size: 2.25rem; 
+    font-size: 1.85rem; /* Reduced to fit 180px height */
     font-weight: 800; 
     line-height: 1.1; 
-    margin-bottom: 1rem; 
+    margin-bottom: 0.5rem; 
     color: white;
 }
 
 .promo-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 1.5rem;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    max-width: 500px;
 }
 
 .hero-categories {

@@ -6,17 +6,14 @@
         <div class="promo-banner">
             <div class="promo-grid">
                 <div class="promo-content animate-fade-in">
-                    <span class="promo-badge">Calidad Garantizada</span>
-                    <h1 class="promo-title">Suministros Odontológicos</h1>
-                    <p class="promo-description">Soluciones profesionales para tu clínica con despacho inmediato.</p>
+                    <span class="promo-badge">Stock Permanente</span>
+                    <h1 class="promo-title">Insumos de Alta Precisión</h1>
+                    <p class="promo-description">Soluciones profesionales con despacho inmediato a todo el país.</p>
                     
                     <div class="hero-buttons">
-                        <a href="#catalogo" class="hero-btn hero-btn-primary">Explorar Catálogo</a>
-                        <a href="/admin" class="hero-btn hero-btn-glass">Portal Admin</a>
+                        <a href="#catalogo" class="hero-btn hero-btn-primary">Ver Catálogo</a>
+                        <a href="/admin" class="hero-btn hero-btn-glass">Admin Panel</a>
                     </div>
-                </div>
-                <div class="promo-image">
-                    <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Dental Professional">
                 </div>
             </div>
         </div>
