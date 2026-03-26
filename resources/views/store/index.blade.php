@@ -6,13 +6,13 @@
         <div class="promo-banner">
             <div class="promo-grid">
                 <div class="promo-content animate-fade-in">
-                    <span class="promo-badge">Stock Permanente</span>
-                    <h1 class="promo-title">Insumos de Alta Precisión</h1>
-                    <p class="promo-description">Soluciones profesionales con despacho inmediato a todo el país.</p>
+                    <span class="promo-badge">Certificación ISO 9001</span>
+                    <h1 class="promo-title">Insumos Quirúrgicos de Alta Gama</h1>
+                    <p class="promo-description">Equipamiento especializado para consultorios que exigen precisión quirúrgica y durabilidad comprobada.</p>
                     
                     <div class="hero-buttons">
-                        <a href="#catalogo" class="hero-btn hero-btn-primary">Ver Catálogo</a>
-                        <a href="/admin" class="hero-btn hero-btn-glass">Admin Panel</a>
+                        <a href="#catalogo" class="hero-btn hero-btn-primary">Ver Portafolio</a>
+                        <a href="/admin" class="hero-btn hero-btn-glass">Portal Med</a>
                     </div>
                 </div>
             </div>
@@ -23,31 +23,39 @@
 <section class="trust-badges">
     <div class="container badges-container">
         <div class="badge-item">
-            <span class="badge-icon">🚚</span>
+            <span class="badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </span>
             <div class="badge-text">
-                <h4>Envío Nacional</h4>
-                <p>Llegamos a todo el país</p>
+                <h4>Envío Express</h4>
+                <p>Logística nacional prioritaria</p>
             </div>
         </div>
         <div class="badge-item">
-            <span class="badge-icon">🛡️</span>
+            <span class="badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </span>
             <div class="badge-text">
-                <h4>Calidad Garantizada</h4>
-                <p>Solo marcas premium</p>
+                <h4>Garantía Médica</h4>
+                <p>Insumos con certificación oficial</p>
             </div>
         </div>
         <div class="badge-item">
-            <span class="badge-icon">💳</span>
+            <span class="badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </span>
             <div class="badge-text">
-                <h4>Pago Seguro</h4>
-                <p>Múltiples medios de pago</p>
+                <h4>Transacción Segura</h4>
+                <p>Cifrado de grado bancario</p>
             </div>
         </div>
         <div class="badge-item">
-            <span class="badge-icon">💬</span>
+            <span class="badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </span>
             <div class="badge-text">
-                <h4>Soporte Experto</h4>
-                <p>Asesoría personalizada</p>
+                <h4>Asesoría Técnica</h4>
+                <p>Soporte por especialistas</p>
             </div>
         </div>
     </div>

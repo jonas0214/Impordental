@@ -6,29 +6,27 @@
 @source '../**/*.js';
 
 @theme {
-    /* Brand Colors - Impordental v2 */
-    --color-bg-base: #f1f5f9;
+    /* Boutique Palette - Impordental v14 */
+    --color-bg-base: #f8fafc;
     --color-bg-surface: #ffffff;
-    --color-bg-surface-hover: #f8fafc;
     
-    --color-text-primary: #1e293b;
-    --color-text-secondary: #475569;
-    --color-text-light: #94a3b8;
+    --color-text-primary: #0f172a; /* Deeper Indigo Black */
+    --color-text-secondary: #334155;
+    --color-text-light: #64748b;
     
-    --color-accent: #0284c7; /* A more "fresh" Blue (Sky Blue) */
+    --color-accent: #0284c7; /* Professional Cyan-Blue */
     --color-accent-dark: #075985;
-    --color-accent-light: #7dd3fc;
-    --color-accent-glow: rgba(2, 132, 199, 0.1);
+    --color-accent-soft: #e0f2fe;
     
-    --color-action: #f97316; /* Professional Orange */
-    --color-action-hover: #ea580c;
+    --color-action: #ea580c; /* Muted Sophisticated Orange */
+    --color-action-hover: #c2410c;
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     
-    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-premium: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-    --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.04), 0 8px 10px -6px rgb(0 0 0 / 0.04);
 }
 
 /* Base Styles */
@@ -70,46 +68,42 @@ html { scroll-behavior: smooth; }
 .logo a { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--color-accent-dark); text-decoration: none; }
 
 .header-search { 
-    width: 450px; 
+    width: 100%;
+    max-width: 420px; /* More compact */
+    margin: 0 auto;
     position: relative; 
 }
 
 .header-search input { 
     width: 100%; 
-    padding: 0.6rem 1.25rem 0.6rem 3rem; 
-    border-radius: 100px; 
+    padding: 0.55rem 1.25rem 0.55rem 2.8rem; 
+    border-radius: 8px; /* Squared but modern */
     border: 1px solid #e2e8f0; 
-    background: #f1f5f9; 
+    background: #f8fafc; 
     font-size: 0.85rem; 
     transition: var(--transition-smooth); 
 }
 
-.search-icon { position: absolute; left: 1.25rem; top: 50%; transform: translateY(-50%); color: var(--color-text-light); font-size: 0.8rem; }
-
-.header-actions { 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-end; 
-    gap: 1.25rem; 
-}
+.search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--color-text-light); }
 
 .portal-link {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--color-text-secondary);
+    letter-spacing: 0.08em;
+    color: var(--color-accent-dark);
     text-decoration: none;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid var(--color-accent-soft);
+    border-radius: 4px;
+    background: white;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
 }
 
-.header-search input:focus { 
-    outline: none; 
-    border-color: var(--color-accent); 
-    background: #fff; 
-    box-shadow: 0 0 0 3px var(--color-accent-glow); 
+.portal-link:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-soft);
 }
 
 .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--color-text-light); font-size: 0.9rem; }
@@ -269,9 +263,25 @@ html { scroll-behavior: smooth; }
 }
 
 .badge-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
-.badge-icon { font-size: 1.5rem; color: var(--color-accent); background: #f0f9ff; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
-.badge-text h4 { font-size: 0.95rem; font-weight: 800; color: var(--color-text-primary); margin-bottom: 0.25rem; }
-.badge-text p { font-size: 0.8rem; color: var(--color-text-secondary); }
+.badge-icon { 
+    font-size: 1.2rem; 
+    color: var(--color-accent); 
+    background: #f0f9ff; 
+    width: 52px; 
+    height: 52px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 12px; 
+    transition: var(--transition-smooth);
+}
+.badge-item:hover .badge-icon {
+    background: var(--color-accent);
+    color: white;
+    transform: rotate(-3deg) scale(1.1);
+}
+.badge-text h4 { font-size: 0.9rem; font-weight: 800; color: #0f172a; margin-bottom: 0.15rem; }
+.badge-text p { font-size: 0.75rem; color: var(--color-text-light); font-weight: 500; }
 
 /* Product Grid v6 (Refined & Modern) */
 .products-section { 
