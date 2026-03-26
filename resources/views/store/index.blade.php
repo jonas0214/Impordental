@@ -4,21 +4,29 @@
 <section class="hero-slider">
     <div class="container">
         <div class="promo-banner">
-            <div class="promo-content animate-fade-in">
-                <span class="promo-badge delay-1">Oferta de la Semana</span>
-                <h1 class="promo-title delay-1">Equipamiento Dental con <span>Garantía Premium</span></h1>
-                <p class="promo-description delay-2">Descubre nuestra nueva línea de unidades odontológicas de alta tecnología. Financiación disponible hasta 12 meses.</p>
-                <div class="hero-buttons delay-2" style="display: flex; gap: 1rem; margin-top: 2rem;">
-                    <a href="#catalogo" class="btn btn-action">Ver Catálogo</a>
-                    <a href="#" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3);">Más Información</a>
+            <div class="promo-grid">
+                <div class="promo-content animate-fade-in">
+                    <span class="promo-badge">Tecnología de Vanguardia</span>
+                    <h1 class="promo-title">Equipamiento Dental <span>Premium</span></h1>
+                    <p class="promo-description">Elevamos el estándar de tu clínica con soluciones integrales de alta precisión y durabilidad garantizada.</p>
+                    
+                    <div class="hero-features delay-1">
+                        <div class="hero-feature-item"><span>✅</span> Garantía de 2 Años</div>
+                        <div class="hero-feature-item"><span>✅</span> Soporte Técnico</div>
+                        <div class="hero-feature-item"><span>✅</span> Envío Asegurado</div>
+                    </div>
+
+                    <div class="hero-buttons delay-2" style="display: flex; gap: 1rem;">
+                        <a href="#catalogo" class="btn btn-action">Explorar Catálogo</a>
+                        <a href="/admin" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3);">Área Profesional</a>
+                    </div>
+                </div>
+                <div class="promo-image animate-float">
+                    <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Equipamiento Dental Professional">
                 </div>
             </div>
-            <div class="promo-image animate-float">
-                <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Equipamiento Dental" style="border-radius: 12px; object-fit: cover;">
-            </div>
             <div class="promo-bg-elements">
-                <div class="bg-circle" style="width: 400px; height: 400px; top: -100px; right: -100px;"></div>
-                <div class="bg-circle" style="width: 200px; height: 200px; bottom: 50px; left: 100px;"></div>
+                <div class="bg-circle" style="width: 300px; height: 300px; top: -50px; right: -50px; opacity: 0.4;"></div>
             </div>
         </div>
     </div>

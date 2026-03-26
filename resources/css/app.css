@@ -113,25 +113,95 @@ html { scroll-behavior: smooth; }
 
 .secondary-nav a:hover { color: var(--color-accent); }
 
-/* Hero Slider v2 */
-.hero-slider { padding: 4rem 0; background: #fff; }
+/* Hero Section v4 (Compact & Professional) */
+.hero-slider { 
+    padding: 3rem 0; 
+    background: #ffffff; 
+}
+
 .promo-banner { 
-    background: #0284c7; 
-    border-radius: 12px; 
+    background: linear-gradient(135deg, #0284c7 0%, #075985 100%); 
+    border-radius: 20px; 
     overflow: hidden; 
     display: flex; 
     align-items: center; 
-    min-height: 400px; 
+    min-height: 440px; /* Reduced from 400+ padding */
     position: relative; 
+    box-shadow: 0 25px 50px -12px rgba(2, 132, 199, 0.2);
 }
 
-.promo-content { flex: 1; padding: 5rem; color: white; z-index: 2; }
-.promo-badge { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 1rem; display: block; }
-.promo-title { font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
-.promo-title span { color: rgba(255, 255, 255, 0.7); }
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    width: 100%;
+    align-items: center;
+}
 
-.promo-image { flex: 1; display: flex; justify-content: center; z-index: 2; padding: 2rem; }
-.promo-image img { max-width: 100%; max-height: 350px; filter: drop-shadow(0 20px 50px rgba(0,0,0,0.2)); border-radius: 8px; }
+.promo-content { 
+    padding: 4rem 5rem; 
+    color: white; 
+    z-index: 2; 
+}
+
+.promo-badge { 
+    font-size: 0.7rem; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: 0.15em; 
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem; 
+    display: inline-block; 
+}
+
+.promo-title { 
+    font-family: var(--font-heading); 
+    font-size: 2.75rem; /* Reduced from 3.5rem */
+    font-weight: 800; 
+    line-height: 1.2; 
+    margin-bottom: 1.25rem; 
+}
+
+.promo-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.hero-features {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.hero-feature-item i {
+    color: var(--color-accent-light);
+}
+
+.promo-image { 
+    display: flex; 
+    justify-content: center; 
+    z-index: 2; 
+    padding-right: 4rem;
+}
+
+.promo-image img { 
+    max-width: 100%; 
+    max-height: 320px; 
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25)); 
+    border-radius: 12px;
+}
 
 /* Trust Badges v2 */
 .trust-badges { padding: 4rem 0; background: #fff; border-bottom: 1px solid #f1f5f9; }
