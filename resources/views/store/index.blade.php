@@ -1,15 +1,16 @@
 @extends('layouts.store')
 
 @section('content')
-<section class="hero-slider">
-    <div class="container hero-container-v17">
-        <div class="hero-main-banner">
-            <div class="hero-text-block animate-fade-in">
-                <h1 class="hero-title-v17">Excelencia en Insumos Odontológicos</h1>
-                <p class="hero-subtitle-v17">Distribución premier de equipamiento de alta gama para profesionales que exigen precisión absoluta.</p>
-                <div class="hero-actions-v17">
-                    <a href="#catalogo" class="btn-primary-v17">Explorar Portafolio</a>
-                    <a href="/admin" class="btn-link-v17">Portal Especialistas</a>
+<section class="hero-corporate">
+    <div class="container">
+        <div class="hero-banner-box">
+            <div class="hero-content-corporate animate-fade-in">
+                <span class="hero-tag">Catálogo Premier 2026</span>
+                <h1 class="hero-h1">Excelencia en Insumos Odontológicos</h1>
+                <p class="hero-p">Distribución premier de equipamiento de alta gama para profesionales que exigen precisión absoluta.</p>
+                <div class="btn-group-corporate">
+                    <a href="#catalogo" class="btn-solid">Explorar Portafolio</a>
+                    <a href="/admin" class="btn-outline">Portal Especialistas</a>
                 </div>
             </div>
         </div>

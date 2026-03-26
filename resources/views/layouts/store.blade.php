@@ -50,20 +50,22 @@
             }
         }
     </script>
-    <div class="top-bar-elite">
-        <div class="container top-bar-container">
-            <div class="top-bar-item"><span>🚚</span> Envío Prioritario Nacional</div>
-            <div class="top-bar-item"><span>🛡️</span> Garantía Técnica Oficial</div>
-            <div class="top-bar-item"><span>👨‍⚕️</span> Soporte para Especialistas</div>
+    <div class="top-bar-corporate">
+        <div class="container top-bar-flex">
+            <div class="top-bar-info">
+                <div class="top-bar-item"><span>🚚</span> Envío Prioritario Nacional</div>
+                <div class="top-bar-item"><span>🛡️</span> Garantía Técnica Oficial</div>
+                <div class="top-bar-item"><span>👨‍⚕️</span> Soporte para Especialistas</div>
+            </div>
         </div>
     </div>
-    <header class="glass-header">
-        <div class="container header-container">
+    <header class="main-header">
+        <div class="container header-flex">
             <div class="logo">
-                <a href="{{ route('home') }}">Impor<span>dental</span></a>
+                <a href="{{ route('home') }}" class="corporate-logo">Impor<span>dental</span></a>
             </div>
 
-            <nav class="main-nav">
+            <nav class="nav-links">
                 <a href="{{ route('home') }}">Inicio</a>
                 <a href="#catalogo">Insumos</a>
                 <a href="#">Equipos</a>
@@ -72,20 +74,8 @@
                 <a href="#">Ofertas</a>
             </nav>
             
-            <form action="#" class="header-search">
-                <span class="search-icon">🔍</span>
-                <input type="text" placeholder="¿Qué estás buscando hoy?">
-            </form>
-
             <div class="header-actions">
-                <a href="/admin" class="portal-link">Portal Profesional</a>
-                <div class="user-tools">
-                    <a href="#" class="tool-btn"><span class="icon">👤</span></a>
-                    <a href="#" class="tool-btn cart-btn">
-                        <span class="icon">🛒</span>
-                        <span class="cart-count">0</span>
-                    </a>
-                </div>
+                <a href="/admin" class="btn-solid" style="padding: 0.6rem 1.25rem; font-size: 0.75rem;">Portal Profesional</a>
             </div>
         </div>
     </header>
