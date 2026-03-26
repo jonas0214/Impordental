@@ -91,7 +91,7 @@
                             <div>
                                 <span class="product-price">${{ number_format($product->price, 0, ',', '.') }}</span>
                             </div>
-                            <a href="#" class="btn btn-primary">Ver</a>
+                            <a href="#" class="btn-card">Ver Detalles</a>
                         </div>
                     </div>
                 </div>
