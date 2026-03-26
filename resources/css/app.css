@@ -41,6 +41,28 @@ html { scroll-behavior: smooth; }
     padding: 0 1.5rem; 
 }
 
+/* Elite Top Bar v18 */
+.top-bar-elite {
+    background: #0f172a;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-bar-item { display: flex; align-items: center; gap: 0.5rem; }
+.top-bar-item span { font-size: 0.8rem; }
+
 .header-container { 
     display: flex; 
     align-items: center; 
@@ -188,67 +210,93 @@ html { scroll-behavior: smooth; }
     padding: 0.75rem 0; 
 }
 
-/* Hero v17 (Pristine Minimalist) */
+/* Hero v18 (Elite Clinical Boutique) */
 .hero-main-banner { 
     background: url('/images/hero-bg.png'); 
     background-size: cover;
     background-position: center;
     border-radius: 24px; 
-    min-height: 240px; 
+    min-height: 280px; 
     display: flex;
     align-items: center;
-    padding: 2.5rem 4rem;
+    padding: 3rem 5rem;
     position: relative;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.04);
+}
+
+/* Subtle lighting gradient for perfect contrast */
+.hero-main-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 60%;
+    background: linear-gradient(to right, rgba(255,255,255,0.6), transparent);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero-text-block { 
-    max-width: 520px;
+    max-width: 540px;
     z-index: 10;
+    position: relative;
 }
 
-.hero-title-v17 { 
-    color: #0f172a; /* Pristine Navy */
-    font-size: 2rem;
-    font-weight: 850;
-    line-height: 1.15;
+.elite-featured-badge {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+}
+
+.hero-title-v18 { 
+    color: #0f172a; 
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 1.1;
     margin-bottom: 1rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
 }
 
-.hero-subtitle-v17 {
+.hero-subtitle-v18 {
     color: #334155;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
 }
 
-.hero-actions-v17 { display: flex; align-items: center; gap: 1.5rem; }
+.hero-actions-v18 { display: flex; align-items: center; gap: 1.5rem; }
 
-.btn-primary-v17 {
+.btn-primary-v18 {
     background: #0f172a;
     color: white;
-    padding: 0.75rem 1.75rem;
-    border-radius: 6px;
+    padding: 0.9rem 2.25rem;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 0.85rem;
-    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
-    transition: var(--transition-smooth);
+    font-size: 0.9rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.btn-primary-v17:hover { transform: translateY(-2px); box-shadow: 0 15px 30px rgba(15, 23, 42, 0.2); }
+.btn-primary-v18:hover { 
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3); 
+    background: #1e293b;
+}
 
-.btn-link-v17 {
+.btn-link-v18 {
     color: #64748b;
     text-decoration: none;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     transition: var(--transition-smooth);
 }
 
-.btn-link-v17:hover { color: #0284c7; }
+.btn-link-v18:hover { color: var(--color-accent); padding-left: 0.25rem; }
 
 .promo-badge { 
     font-size: 0.6rem; 

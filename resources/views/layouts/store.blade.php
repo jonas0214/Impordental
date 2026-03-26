@@ -50,6 +50,13 @@
             }
         }
     </script>
+    <div class="top-bar-elite">
+        <div class="container top-bar-container">
+            <div class="top-bar-item"><span>🚚</span> Envío Prioritario Nacional</div>
+            <div class="top-bar-item"><span>🛡️</span> Garantía Técnica Oficial</div>
+            <div class="top-bar-item"><span>👨‍⚕️</span> Soporte para Especialistas</div>
+        </div>
+    </div>
     <header class="glass-header">
         <div class="container header-container">
             <div class="logo">
