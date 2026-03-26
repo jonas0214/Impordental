@@ -1,27 +1,59 @@
 @extends('layouts.store')
 
 @section('content')
-<section class="hero-section">
-    <div class="hero-bg-animated"></div>
-    <div class="container hero-content">
-        <span class="hero-badge">El Estándar Profesional</span>
-        <h1 class="hero-title">Equipamiento Odontológico de <span>Próxima Generación</span></h1>
-        <p class="hero-description">Descubre el catálogo más avanzado de insumos dentales. Calidad, precisión y la tecnología que necesitas para potenciar tu clínica.</p>
-        <div class="hero-buttons">
-            <a href="#catalogo" class="btn btn-primary btn-glow">Explorar Catálogo</a>
-            <a href="/admin" class="btn btn-secondary">Portal Administrativo</a>
+<section class="hero-slider">
+    <div class="container">
+        <div class="promo-banner">
+            <div class="promo-content">
+                <span class="promo-badge">Oferta de la Semana</span>
+                <h1 class="promo-title">Equipamiento Dental con <span>Garantía Premium</span></h1>
+                <p class="promo-description">Descubre nuestra nueva línea de unidades odontológicas de alta tecnología. Financiación disponible hasta 12 meses.</p>
+                <div class="hero-buttons" style="justify-content: flex-start;">
+                    <a href="#catalogo" class="btn btn-action">Ver Catálogo</a>
+                    <a href="#" class="btn btn-secondary">Más Información</a>
+                </div>
+            </div>
+            <div class="promo-image">
+                <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Equipamiento Dental" style="border-radius: 12px; object-fit: cover;">
+            </div>
+            <div class="promo-bg-elements">
+                <div class="bg-circle" style="width: 400px; height: 400px; top: -100px; right: -100px;"></div>
+                <div class="bg-circle" style="width: 200px; height: 200px; bottom: 50px; left: 100px;"></div>
+            </div>
         </div>
+    </div>
+</section>
 
-        @if($categories->count() > 0)
-        <div class="hero-categories">
-            @foreach($categories as $category)
-            <a href="#catalogo" class="category-pill">
-                <span class="pill-icon">🔬</span>
-                <span class="pill-text">{{ $category->name }}</span>
-            </a>
-            @endforeach
+<section class="trust-badges">
+    <div class="container badges-container">
+        <div class="badge-item">
+            <span class="badge-icon">🚚</span>
+            <div class="badge-text">
+                <h4>Envío Nacional</h4>
+                <p>Llegamos a todo el país</p>
+            </div>
         </div>
-        @endif
+        <div class="badge-item">
+            <span class="badge-icon">🛡️</span>
+            <div class="badge-text">
+                <h4>Calidad Garantizada</h4>
+                <p>Solo marcas premium</p>
+            </div>
+        </div>
+        <div class="badge-item">
+            <span class="badge-icon">💳</span>
+            <div class="badge-text">
+                <h4>Pago Seguro</h4>
+                <p>Múltiples medios de pago</p>
+            </div>
+        </div>
+        <div class="badge-item">
+            <span class="badge-icon">💬</span>
+            <div class="badge-text">
+                <h4>Soporte Experto</h4>
+                <p>Asesoría personalizada</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -42,7 +74,7 @@
                         @else
                             <div class="image-placeholder">🦷</div>
                         @endif
-                        <span class="product-category">{{ $product->category->name ?? 'Odontología' }}</span>
+                        <span class="product-category">{{ $product->category->name ?? 'Insumos' }}</span>
                     </div>
                     <div class="product-info">
                         <span class="product-brand">{{ $product->brand->name ?? 'Premium' }}</span>
@@ -51,10 +83,13 @@
                         <div class="product-price-row">
                             <span class="product-price">${{ number_format($product->price, 0, ',', '.') }}</span>
                             @if($product->stock > 0)
-                                <span class="badge in-stock">En Stock</span>
+                                <span class="badge in-stock">Disponible</span>
                             @else
                                 <span class="badge out-of-stock">Agotado</span>
                             @endif
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="#" class="btn btn-primary" style="width: 100%; border-radius: 6px;">Ver Detalles</a>
                         </div>
                     </div>
                 </div>

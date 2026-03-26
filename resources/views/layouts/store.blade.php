@@ -21,16 +21,29 @@
             <div class="logo">
                 <a href="{{ route('home') }}">Impor<span>dental</span></a>
             </div>
-            <nav class="nav-links">
-                <a href="{{ route('home') }}" class="active">Inicio</a>
-                <a href="#catalogo">Catálogo</a>
-                <a href="#">Equipos</a>
-                <a href="#">Educación</a>
-            </nav>
+            
+            <form action="#" class="header-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="¿Qué estás buscando hoy?">
+            </form>
+
             <div class="header-actions">
-                <a href="/admin" class="btn btn-outline" id="btn-portal">Portal Admin</a>
+                <a href="#" class="btn btn-outline" style="border:none; font-size: 1.2rem;">👤</a>
+                <a href="#" class="btn btn-outline" style="border:none; font-size: 1.2rem; position:relative;">
+                    🛒 <span style="position:absolute; top:5px; right:5px; background:var(--color-action); color:white; font-size:0.6rem; padding: 2px 5px; border-radius:50%;">0</span>
+                </a>
             </div>
         </div>
+        <nav class="secondary-nav">
+            <div class="container">
+                <a href="{{ route('home') }}">Inicio</a>
+                <a href="#catalogo">Insumos</a>
+                <a href="#">Equipos</a>
+                <a href="#">Ortodoncia</a>
+                <a href="#">Estética</a>
+                <a href="#">Ofertas</a>
+            </div>
+        </nav>
     </header>
 
     <main id="main-content">
@@ -38,8 +51,37 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; {{ date('Y') }} Impordental. Innovación y Precisión para Profesionales de la Salud Dental.</p>
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: left; padding: 4rem 0;">
+            <div>
+                <div class="logo" style="margin-bottom: 1.5rem;">
+                    <a href="#" style="color: white;">Impor<span style="color: var(--color-accent-light);">dental</span></a>
+                </div>
+                <p style="font-size: 0.85rem; line-height: 1.8;">Expertos en suministro de equipos e insumos odontológicos de alta calidad. Tu socio estratégico en salud dental.</p>
+            </div>
+            <div>
+                <h4 style="color: white; margin-bottom: 1.5rem;">Categorías</h4>
+                <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Equipos Dentales</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Insumos Clínicos</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Bioseguridad</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Instrumental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: white; margin-bottom: 1.5rem;">Ayuda</h4>
+                <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Preguntas Frecuentes</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Envíos y Devoluciones</a></li>
+                    <li><a href="#" style="color: inherit; text-decoration: none;">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: white; margin-bottom: 1.5rem;">Contacto</h4>
+                <p style="font-size: 0.85rem; line-height: 1.8;">📍 Calle Primaria #123, Ciudad<br>📞 +57 300 123 4567<br>✉️ info@impordental.com</p>
+            </div>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding: 2rem 0;">
+            <p>&copy; {{ date('Y') }} Impordental. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
