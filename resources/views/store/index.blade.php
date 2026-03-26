@@ -6,25 +6,18 @@
         <div class="promo-banner">
             <div class="promo-grid">
                 <div class="promo-content animate-fade-in">
-                    <span class="promo-badge">Innovación Odontológica</span>
-                    <h1 class="promo-title">Excelencia en Cada <span>Detalle</span></h1>
-                    <p class="promo-description">Especialistas en suministro de alta precisión para clínicas que buscan resultados de clase mundial.</p>
+                    <span class="promo-badge">Calidad Garantizada</span>
+                    <h1 class="promo-title">Suministros Odontológicos</h1>
+                    <p class="promo-description">Soluciones profesionales para tu clínica con despacho inmediato.</p>
                     
-                    <div class="hero-categories delay-1">
-                        <a href="#catalogo" class="hero-cat-pill">Insumos</a>
-                        <a href="#catalogo" class="hero-cat-pill">Equipos</a>
-                        <a href="#catalogo" class="hero-cat-pill">Bioseguridad</a>
-                        <a href="#catalogo" class="hero-cat-pill">Ortodoncia</a>
-                    </div>
-
-                    <div class="hero-buttons delay-2">
-                        <a href="#catalogo" class="hero-btn hero-btn-primary">Explorar Todo</a>
+                    <div class="hero-buttons">
+                        <a href="#catalogo" class="hero-btn hero-btn-primary">Explorar Catálogo</a>
                         <a href="/admin" class="hero-btn hero-btn-glass">Portal Admin</a>
                     </div>
                 </div>
-            </div>
-            <div class="promo-image animate-float">
-                <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Watermark Background">
+                <div class="promo-image">
+                    <img src="https://img.freepik.com/free-photo/stomatological-dentist-equipment-blue-background_23-2148214150.jpg" alt="Dental Professional">
+                </div>
             </div>
         </div>
     </div>
