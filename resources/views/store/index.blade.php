@@ -9,8 +9,19 @@
         <p class="hero-description">Descubre el catálogo más avanzado de insumos dentales. Calidad, precisión y la tecnología que necesitas para potenciar tu clínica.</p>
         <div class="hero-buttons">
             <a href="#catalogo" class="btn btn-primary btn-glow">Explorar Catálogo</a>
-            <a href="#" class="btn btn-secondary">Asesoría Especializada</a>
+            <a href="/admin" class="btn btn-secondary">Portal Administrativo</a>
         </div>
+
+        @if($categories->count() > 0)
+        <div class="hero-categories">
+            @foreach($categories as $category)
+            <a href="#catalogo" class="category-pill">
+                <span class="pill-icon">🔬</span>
+                <span class="pill-text">{{ $category->name }}</span>
+            </a>
+            @endforeach
+        </div>
+        @endif
     </div>
 </section>
 
