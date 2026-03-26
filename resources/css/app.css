@@ -143,113 +143,102 @@ html { scroll-behavior: smooth; }
     transition: var(--transition-smooth); 
 }
 
-.header-actions { 
-    display: flex; 
-    align-items: center; 
-    gap: 1.5rem; 
+/* Typography Elite Overrides */
+h1, h2, h3, h4, .hero-title-v18 { 
+    font-family: var(--font-heading); 
+    font-weight: 900 !important; 
+    letter-spacing: -0.04em; 
+    color: #0c1c38;
 }
 
-.user-tools {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
+/* Hero Section Elite */
+.hero-slider { padding: 1.5rem 0; }
 
-.tool-btn {
-    text-decoration: none;
-    color: var(--color-text-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition-smooth);
-}
-
-.tool-btn:hover { color: var(--color-accent); transform: translateY(-1px); }
-
-.cart-btn { position: relative; }
-.cart-count { 
-    position: absolute; 
-    top: -8px; 
-    right: -8px; 
-    background: var(--color-action); 
-    color: white; 
-    font-size: 10px; 
-    font-weight: 900; 
-    width: 16px; 
-    height: 16px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 50%; 
-}
-
-.secondary-nav { 
-    background: rgba(255, 255, 255, 0.6); 
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(0,0,0,0.03); 
-    padding: 0.25rem 0;
-}
-
-.secondary-nav a { 
-    color: #64748b; 
-    font-size: 0.65rem; 
-    font-weight: 600; 
-    letter-spacing: 0.02em;
-    padding: 0.4rem 0.75rem;
-}
-
-.secondary-nav a:hover { 
-    background: #fff;
-    color: var(--color-accent); 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.secondary-nav a:hover { color: var(--color-accent); }
-
-/* Hero Section v11 (The "Medical Edge" Layout) */
-.hero-slider { 
-    padding: 0.75rem 0; 
-}
-
-/* Hero v18 (Elite Clinical Boutique) */
 .hero-main-banner { 
     background: url('/images/hero-bg.png'); 
     background-size: cover;
     background-position: center;
     border-radius: 24px; 
-    min-height: 280px; 
+    min-height: 320px; 
     display: flex;
     align-items: center;
     padding: 3rem 5rem;
     position: relative;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.04);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.04);
 }
 
-/* Subtle lighting gradient for perfect contrast */
 .hero-main-banner::before {
     content: '';
     position: absolute;
     top: 0; left: 0; bottom: 0;
-    width: 60%;
-    background: linear-gradient(to right, rgba(255,255,255,0.6), transparent);
+    width: 65%;
+    background: linear-gradient(to right, rgba(255,255,255,0.7), transparent);
     z-index: 1;
     pointer-events: none;
 }
 
 .hero-text-block { 
-    max-width: 540px;
+    max-width: 580px;
     z-index: 10;
     position: relative;
 }
 
 .elite-featured-badge {
     color: var(--color-accent);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.75rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 1rem;
+    display: block;
 }
+
+.hero-title-v18 { 
+    font-size: 2.75rem;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+}
+
+.hero-subtitle-v18 {
+    color: #334155;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.hero-actions-v18 { display: flex; align-items: center; gap: 2rem; }
+
+.btn-primary-v18 {
+    background: #0f172a;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-primary-v18:hover { 
+    transform: translateY(-4px) scale(1.02); 
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.3); 
+    background: #1e293b;
+}
+
+.btn-link-v18 {
+    color: #64748b;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+}
+
+.btn-link-v18:hover { color: var(--color-accent); padding-left: 0.5rem; }
 
 .hero-title-v18 { 
     color: #0f172a; 
